@@ -1,0 +1,1965 @@
+<!doctype html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Admin Trade | OOFTrade</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/output.css" />
+	</head>
+
+	<body class="h-full">
+		<div class="wrapper relative flex min-h-full">
+			<!-- Sidebar -->
+			<aside
+				class="flex h-auto w-[240px] flex-col pt-6 pb-3 pl-8 sm:w-[150px] sm:p-3 sm:pt-6"
+			>
+				<a href="#"><img src="./images/global/logo.svg" alt="logo" /></a>
+				<button
+					id="account-settings-btn"
+					class="border-greytext hover:border-lightgreen mt-8 flex w-full items-center gap-3 rounded-lg border px-[14px] py-[10px] transition-colors sm:justify-center sm:gap-0"
+				>
+					<img
+						class="h-[28px] w-[28px]"
+						src="./images/global/account-avatar.svg"
+						alt="icon"
+					/>
+					<p class="text-body-s-medium sm:hidden">Admin</p>
+				</button>
+				<!-- Menu -->
+				<ul class="mt-10 gap-0">
+					<li class="group">
+						<a
+							class="text-body-m group text-greytext group-[.active]:bg-menu-item-gradient flex items-center gap-[14px] py-3 group-[.active]:rounded-lg"
+							href="#"
+						>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 18 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M12.771 0H9.67505V5.4V6.075V10.575H18V6.075V5.4V5.229C18 1.953 16.047 0 12.771 0Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M0 7.42505V11.925V12.375V12.771C0 16.047 1.953 18 5.229 18H8.325V12.375V11.925V7.42505H0Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M8.325 0V6.075H0V5.229C0 1.953 1.953 0 5.229 0H8.325Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M18 11.925V12.771C18 16.047 16.047 18 12.771 18H9.67505V11.925H18Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+							</svg>
+
+							<span
+								class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
+							>
+								Dashboard
+							</span>
+						</a>
+					</li>
+					<li class="active group">
+						<a
+							class="text-body-m group text-greytext group-[.active]:bg-menu-item-gradient flex items-center gap-[14px] py-3 group-[.active]:rounded-lg"
+							href="#"
+						>
+							<svg
+								width="20"
+								height="18"
+								viewBox="0 0 20 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M19.9999 5.22896V9.44993H16.3279C16.2199 9.44093 15.9859 9.30593 15.9319 9.20693L14.9959 7.43395C14.6269 6.73195 13.9879 6.33595 13.3039 6.37195C12.6199 6.40795 12.0349 6.86695 11.7379 7.61394L10.4959 10.7279L10.3159 10.2599C9.87494 9.11693 8.61495 8.25294 7.37296 8.25294L2 8.27994V5.22896C2 1.95299 3.95299 0 7.22896 0H14.7709C18.0469 0 19.9999 1.95299 19.9999 5.22896Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M19.9999 12.7711V10.8002H16.3279C15.7249 10.8002 15.0139 10.3682 14.7349 9.83716L13.7989 8.06418C13.5469 7.58718 13.1869 7.61418 12.9889 8.10918L10.9189 13.3381C10.6939 13.9231 10.3159 13.9231 10.0819 13.3381L9.05595 10.7462C8.81295 10.1162 8.05696 9.60317 7.38196 9.60317L2 9.63017V12.7711C2 15.9931 3.88999 17.9371 7.06696 17.9911C7.16596 18.0001 7.27396 18.0001 7.37296 18.0001H14.5729C14.7079 18.0001 14.8429 18.0001 14.9689 17.9911C18.1279 17.9191 19.9999 15.9841 19.9999 12.7711Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M0.999971 9.69995V13.01C0.979971 12.69 0.969971 12.35 0.969971 12V9.69995H0.999971Z"
+									fill="white"
+									fill-opacity="0.6"
+								/>
+							</svg>
+
+							<span
+								class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
+							>
+								Trade
+							</span>
+						</a>
+					</li>
+					<li class="group">
+						<a
+							class="text-body-m group text-greytext group-[.active]:bg-menu-item-gradient flex items-center gap-[14px] py-3 group-[.active]:rounded-lg"
+							href="#"
+						>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 18 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M17.3721 16.7441H0.627907C0.284651 16.7441 0 16.4594 0 16.1162C0 15.7729 0.284651 15.4883 0.627907 15.4883H17.3721C17.7153 15.4883 18 15.7729 18 16.1162C18 16.4594 17.7153 16.7441 17.3721 16.7441Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M7.11633 1.67442V16.7442H10.8838V1.67442C10.8838 0.753488 10.507 0 9.3768 0H8.62331C7.49308 0 7.11633 0.753488 7.11633 1.67442Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M1.46509 6.69761V16.7441H4.81393V6.69761C4.81393 5.77668 4.47904 5.02319 3.47439 5.02319H2.80462C1.79997 5.02319 1.46509 5.77668 1.46509 6.69761Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M13.186 10.8836V16.7441H16.5349V10.8836C16.5349 9.96272 16.2 9.20923 15.1953 9.20923H14.5256C13.5209 9.20923 13.186 9.96272 13.186 10.8836Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+							</svg>
+
+							<span
+								class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
+							>
+								Analytics
+							</span>
+						</a>
+					</li>
+					<li class="group">
+						<a
+							class="text-body-m group text-greytext group-[.active]:bg-menu-item-gradient flex items-center gap-[14px] py-3 group-[.active]:rounded-lg"
+							href="#"
+						>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 18 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M16.2819 5.99653C14.6537 5.99653 13.988 4.84385 14.7976 3.43002C15.2654 2.61054 14.9865 1.56593 14.1679 1.09766L12.6117 0.206132C11.901 -0.217116 10.9835 0.0350318 10.5607 0.746449L10.4618 0.91755C9.65217 2.33138 8.32084 2.33138 7.50225 0.91755L7.4033 0.746449C6.9985 0.0350318 6.08096 -0.217116 5.37031 0.206132L3.81409 1.09766C2.9955 1.56593 2.71664 2.61955 3.18441 3.43903C4.003 4.84385 3.33733 5.99653 1.70915 5.99653C0.773613 5.99653 0 6.76198 0 7.70753V9.29247C0 10.229 0.764618 11.0035 1.70915 11.0035C3.33733 11.0035 4.003 12.1561 3.18441 13.57C2.71664 14.3895 2.9955 15.4341 3.81409 15.9023L5.37031 16.7939C6.08096 17.2171 6.9985 16.965 7.42129 16.2536L7.52024 16.0825C8.32983 14.6686 9.66117 14.6686 10.4798 16.0825L10.5787 16.2536C11.0015 16.965 11.919 17.2171 12.6297 16.7939L14.1859 15.9023C15.0045 15.4341 15.2834 14.3805 14.8156 13.57C13.997 12.1561 14.6627 11.0035 16.2909 11.0035C17.2264 11.0035 18 10.238 18 9.29247V7.70753C17.991 6.77099 17.2264 5.99653 16.2819 5.99653ZM8.9955 11.4267C7.38531 11.4267 6.07196 10.1119 6.07196 8.5C6.07196 6.88805 7.38531 5.57328 8.9955 5.57328C10.6057 5.57328 11.919 6.88805 11.919 8.5C11.919 10.1119 10.6057 11.4267 8.9955 11.4267Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+							</svg>
+
+							<span
+								class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
+							>
+								Setting
+							</span>
+						</a>
+					</li>
+					<li class="group">
+						<a
+							class="text-body-m group text-greytext group-[.active]:bg-menu-item-gradient flex items-center gap-[14px] py-3 group-[.active]:rounded-lg"
+							href="#"
+						>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 18 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M4.97702 9.00011C4.97702 8.43289 5.09727 7.89281 5.31231 7.40027C5.50673 6.95494 5.47329 6.41836 5.12969 6.07476L2.9456 3.89067C2.53554 3.48061 1.85884 3.50203 1.5336 3.98214C0.562414 5.41575 0 7.14304 0 9.00011C0 10.8556 0.561436 12.5815 1.52595 14.0143C1.85022 14.4961 2.52794 14.5191 2.93908 14.109L5.12816 11.9255C5.47254 11.582 5.50637 11.0448 5.31187 10.599C5.09711 10.1067 4.97702 9.56695 4.97702 9.00011Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M9.02726 4.95002C9.59449 4.95002 10.1346 5.07027 10.6271 5.28531C11.0724 5.47973 11.609 5.44629 11.9526 5.10269L14.1119 2.94344C14.5211 2.53418 14.5008 1.85899 14.0221 1.53361C12.5934 0.56242 10.8648 0 9.00026 0C7.14501 0 5.42546 0.561312 3.99481 1.52563C3.51328 1.8502 3.49028 2.52794 3.90037 2.93908L6.06946 5.1137C6.41536 5.46049 6.95722 5.49217 7.40504 5.29376C7.90127 5.07391 8.44878 4.95002 9.02726 4.95002Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M16.1607 3.5582C15.9843 3.32752 15.6468 3.31563 15.4412 3.52067L12.6124 6.34223C12.439 6.51518 12.4195 6.78676 12.5412 6.99925C12.8796 7.58971 13.0768 8.27027 13.0768 9.00014C13.0768 9.73021 12.8794 10.4109 12.5409 11.0015C12.4193 11.2138 12.4387 11.485 12.6117 11.658L15.4412 14.4876C15.6467 14.6931 15.9846 14.6814 16.161 14.4505C17.3159 12.938 17.9998 11.048 17.9998 9.00014C17.9998 6.9521 17.3158 5.06942 16.1607 3.5582Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+								<path
+									d="M9.02577 13.0499C8.2957 13.0499 7.61497 12.8526 7.02439 12.5141C6.81213 12.3924 6.54086 12.4118 6.36786 12.5848L3.51128 15.4414C3.30579 15.6469 3.31748 15.9848 3.54845 16.1611C5.06089 17.316 6.95091 17.9999 8.99877 17.9999C11.0559 17.9999 12.9476 17.3153 14.4536 16.1524C14.6826 15.9756 14.6932 15.6393 14.4886 15.4347L11.6539 12.6001C11.4821 12.4283 11.2132 12.4079 11.0015 12.5272C10.4134 12.8586 9.74118 13.0499 9.02577 13.0499Z"
+									fill="#A3A7A9"
+									class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+								/>
+							</svg>
+
+							<span
+								class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
+							>
+								Support
+							</span>
+						</a>
+					</li>
+				</ul>
+
+				<!-- Sign Out Button -->
+				<button
+					class="text-body-m group text-greytext group-[.active]:bg-menu-item-gradient mt-auto flex items-center gap-[14px] py-3 group-[.active]:rounded-lg"
+				>
+					<svg
+						width="22"
+						height="22"
+						viewBox="0 0 22 22"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M15.5833 1.83325H6.41663C4.85829 1.83325 3.66663 3.02492 3.66663 4.58325V10.0833H11.55L9.44163 7.97492C9.07496 7.60825 9.07496 7.05825 9.44163 6.69159C9.80829 6.32492 10.3583 6.32492 10.725 6.69159L14.3916 10.3583C14.7583 10.7249 14.7583 11.2749 14.3916 11.6416L10.725 15.3083C10.3583 15.6749 9.80829 15.6749 9.44163 15.3083C9.07496 14.9416 9.07496 14.3916 9.44163 14.0249L11.55 11.9166H3.66663V17.4166C3.66663 18.9749 4.85829 20.1666 6.41663 20.1666H15.5833C17.1416 20.1666 18.3333 18.9749 18.3333 17.4166V4.58325C18.3333 3.02492 17.1416 1.83325 15.5833 1.83325Z"
+							fill="#A3A7A9"
+							class="group-hover:fill-lightgreen group-[.active]:fill-lightgreen transition-colors"
+						/>
+					</svg>
+
+					<span
+						class="transition-colors group-hover:text-white group-[.active]:text-white sm:hidden"
+					>
+						Sign Out
+					</span>
+				</button>
+			</aside>
+			<!-- Content -->
+			<main class="mx-12 h-screen w-full sm:mx-5">
+				<!-- Head -->
+				<section class="mt-6">
+					<div
+						class="flex items-center justify-between sm:flex-col-reverse sm:gap-2"
+					>
+						<p class="text-body-lg-m">Tournaments:</p>
+						<!-- Toggle .open & .closed class -->
+						<button class="market-status closed">Market Closed</button>
+					</div>
+
+					<div class="border-b border-b-[#3C4547] py-[18px] sm:py-2">
+						<div class="flex gap-4 sm:flex-wrap sm:gap-1">
+							<button class="tournament-button active">
+								<img
+									class="sm:h-5 sm:w-5"
+									src="./images/global/world-cup.png"
+									alt="img"
+								/>
+								<span>World Cup (M)</span>
+							</button>
+							<button class="tournament-button">
+								<img
+									class="sm:h-5 sm:w-5"
+									src="./images/global/world-cup.png"
+									alt="img"
+								/>
+								<span>World Cup (W)</span>
+							</button>
+							<button class="tournament-button">
+								<img
+									class="sm:h-5 sm:w-5"
+									src="./images/global/wimbledon.png"
+									alt="img"
+								/>
+								<span>Wimbledon (M)</span>
+							</button>
+							<button
+								id="create-tournament-btn"
+								class="bg-darkgrey hover:border-lightgreen ml-auto flex h-[54px] w-[54px] items-center justify-center rounded-lg border border-transparent p-[18px] text-xl sm:h-5 sm:w-5"
+							>
+								<span>+</span>
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<!-- Grid -->
+				<section
+					class="mt-4 grid grid-cols-3 gap-4 pb-10 md:grid-cols-1 lg:grid-cols-2"
+				>
+					<div class="flex flex-col lg:order-1">
+						<!-- Main Table -->
+						<div class="bg-darkgrey rounded-lg px-3 py-4">
+							<div
+								class="h-full max-h-[600px] overflow-auto pr-3 lg:max-h-[850px]"
+							>
+								<!-- Header -->
+								<div
+									class="border-b-table-border bg-darkgrey sticky top-0 z-10 flex gap-5 border-b px-2 pb-2"
+								>
+									<div class="w-[130px]">
+										<p class="text-body-xs text-greytext">Team/Player</p>
+									</div>
+									<div
+										class="text-body-xs text-greytext grid w-[130px] grid-cols-3 gap-14"
+									>
+										<p class="text-body-xs text-greytext">Last</p>
+										<p class="text-body-xs text-greytext">Bid</p>
+										<p class="text-body-xs text-greytext">Ask</p>
+									</div>
+								</div>
+
+								<!-- Rows -->
+								<div class="mt-1 flex flex-col gap-1">
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s">Germany</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s">68</p>
+											<p class="text-body-s text-lightred">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s">Germany</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s">68</p>
+											<p class="text-body-s text-lightred">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s">Germany</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s">68</p>
+											<p class="text-body-s text-lightred">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s">Germany</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s">68</p>
+											<p class="text-body-s text-lightred">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s">Germany</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s">68</p>
+											<p class="text-body-s text-lightred">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s">Germany</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s">68</p>
+											<p class="text-body-s text-lightred">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s">Germany</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s">68</p>
+											<p class="text-body-s text-lightred">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s">Germany</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s">68</p>
+											<p class="text-body-s text-lightred">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row -->
+									<div class="live-row live-row-green">
+										<div class="w-[130px]">
+											<p class="text-body-s">United States</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s text-lightgreen">68</p>
+											<p class="text-body-s">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+
+									<!-- Live Row -->
+									<div class="live-row live-row-red">
+										<div class="w-[130px]">
+											<p class="text-body-s">Germany</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s">68</p>
+											<p class="text-body-s text-lightred">69.5</p>
+											<p class="text-body-s">70</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+									<!-- Live Row  with empty collumns -->
+									<div class="live-row live-row-grey">
+										<div class="w-[130px]">
+											<p class="text-body-s text-greytext">Jamaica</p>
+										</div>
+										<div class="text-body-s grid w-[130px] grid-cols-3 gap-14">
+											<p class="text-body-s col-span-1">68</p>
+											<p
+												class="text-body-s text-greytext col-span-2 text-center"
+											>
+												Settled
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col gap-4 lg:order-3">
+						<!-- Order Book-->
+						<div class="bg-darkgrey rounded-lg px-6 py-4 pr-3">
+							<div class="flex justify-between">
+								<p class="text-body-lg-m pb-3 text-left">
+									United States Order Book
+								</p>
+							</div>
+							<div class="max-h-[429px] overflow-auto pr-3">
+								<table class="overf-y-auto w-full table-fixed border-collapse">
+									<thead class="text-body-xs text-greytext">
+										<tr>
+											<th class="px-[10px] py-[5px] text-center">Bid</th>
+											<th
+												class="border-x-table-border border-x px-[10px] py-[5px] text-center"
+											>
+												Price
+											</th>
+											<th class="px-[10px] py-[5px] text-center">Ask</th>
+										</tr>
+									</thead>
+									<tbody
+										class="text-body-s overf-y-auto h-full max-h-[500px] w-full"
+									>
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7">3</td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7"></td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7"></td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7">3</td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7">3</td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7"></td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7"></td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7">3</td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7">3</td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7"></td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7"></td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7">3</td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7">3</td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7"></td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7"></td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+
+										<tr
+											class="border-y-table-border overflow-auto rounded-lg border-y"
+										>
+											<td class="text-center leading-7">3</td>
+											<td
+												class="border-x-table-border border-x text-center leading-7"
+											>
+												73.5
+											</td>
+											<td class="text-center leading-7"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<!-- PnL Leaderboard -->
+						<div class="bg-darkgrey rounded-lg px-6 py-4 pr-3">
+							<p class="text-body-lg-m pb-3 text-left">
+								United States PnL Leaderboard:
+							</p>
+							<div class="max-h-[300px] overflow-auto pr-3">
+								<table class="overf-y-auto w-full table-auto">
+									<thead class="text-body-xs text-greytext">
+										<tr>
+											<th class="w-20 px-[10px] py-[5px] text-left">Rank</th>
+											<th class="px-[10px] py-[5px] text-left">Name</th>
+											<th class="px-[10px] py-[5px] text-left">PnL</th>
+											<th class="px-[10px] py-[5px] text-right">Position</th>
+										</tr>
+									</thead>
+									<tbody
+										class="text-body-s overf-y-auto h-full max-h-[500px] w-full"
+									>
+										<tr
+											class="text-lightblue hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">1</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="text-lightred px-[10px] py-[5px] text-right">
+												-10
+											</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">2</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="text-lightred px-[10px] py-[5px] text-right">
+												-10
+											</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">3</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="px-[10px] py-[5px] text-right">-10</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">4</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="text-lightred px-[10px] py-[5px] text-right">
+												-10
+											</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">5</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="text-lightred px-[10px] py-[5px] text-right">
+												-10
+											</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">3</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="px-[10px] py-[5px] text-right">-10</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">4</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="text-lightred px-[10px] py-[5px] text-right">
+												-10
+											</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">5</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="text-lightred px-[10px] py-[5px] text-right">
+												-10
+											</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">6</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="text-lightred px-[10px] py-[5px] text-right">
+												-10
+											</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">7</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="px-[10px] py-[5px] text-right">-10</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">8</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="text-lightred px-[10px] py-[5px] text-right">
+												-10
+											</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">9</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="text-lightred px-[10px] py-[5px] text-right">
+												-10
+											</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">10</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">254.2</td>
+											<td class="text-lightred px-[10px] py-[5px] text-right">
+												-10
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col gap-4 lg:order-2">
+						<!-- Settlement -->
+						<div class="bg-darkgrey rounded-lg px-6 py-4">
+							<p class="text-body-lg-m pb-3 text-left">Settlement</p>
+							<form>
+								<div class="grid grid-cols-3 gap-[2px]">
+									<div class="col-span-2 grid">
+										<label class="input-label" for="team">
+											<p class="text-body-xs text-greytext">Team/Player</p>
+											<select
+												id="team"
+												name="team"
+												class="input-small rounded-tr-none rounded-br-none bg-[length:24px]"
+											>
+												<option value="us" selected>United State</option>
+												<option value="ge">Germany</option>
+												<option value="fr">France</option>
+											</select>
+										</label>
+									</div>
+									<div class="col-span-1 grid">
+										<label class="input-label" for="price">
+											<p class="text-body-xs text-greytext">Price</p>
+											<input
+												id="price"
+												name="price"
+												type="text"
+												class="input-small rounded-tl-none rounded-bl-none"
+											/>
+										</label>
+									</div>
+								</div>
+
+								<button class="btn btn-small mt-5" type="submit">
+									Confirm Settlement
+								</button>
+							</form>
+						</div>
+
+						<!-- Trade History -->
+						<div class="bg-darkgrey rounded-lg px-6 py-4 pr-3">
+							<p class="text-body-lg-m pb-3 text-left">Trade History</p>
+							<div class="max-h-[300px] overflow-auto pr-3">
+								<table class="w-full table-auto">
+									<thead class="text-body-xs text-greytext">
+										<tr>
+											<th class="w-20 px-[10px] py-[5px] text-left">Time</th>
+											<th class="w-20 px-[10px] py-[5px] text-left">Buyer</th>
+											<th class="px-[10px] py-[5px] text-left">Seller</th>
+											<th class="px-[10px] py-[5px] text-left">Price</th>
+											<th class="px-[10px] py-[5px] text-right">Quantity</th>
+										</tr>
+									</thead>
+									<tbody
+										class="text-body-s overf-y-auto h-full max-h-[500px] w-full"
+									>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="text-greytext px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="text-greytext px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="text-greytext px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="text-greytext px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="text-greytext px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="text-greytext px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="text-greytext px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="text-greytext px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+										<tr
+											class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+										>
+											<td class="px-[10px] py-[5px]">15.25.03</td>
+											<td class="px-[10px] py-[5px]">LZJ</td>
+											<td class="px-[10px] py-[5px]">FHS</td>
+											<td class="px-[10px] py-[5px]">68</td>
+											<td class="px-[10px] py-[5px] text-right">1</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<!-- Overall PnL Ranking -->
+						<div class="bg-darkgrey rounded-lg">
+							<p class="text-body-lg-m px-6 py-4 pb-3 text-left">
+								Overall PnL Ranking
+							</p>
+							<div
+								class="flex items-center justify-between bg-[#2C3638] px-6 py-[2px]"
+							>
+								<p class="text-body-s text-greytext">
+									Players:
+									<span class="text-body-m-medium text-white">24</span>
+								</p>
+								<p class="text-body-s text-greytext">
+									Prize Pool:
+									<span class="text-body-m-medium text-white">$4800</span>
+								</p>
+							</div>
+							<div class="px-6 py-4 pt-2 pr-3">
+								<div class="max-h-[220px] overflow-auto pr-3">
+									<table class="overf-y-auto w-full table-auto">
+										<thead class="text-body-xs text-greytext">
+											<tr>
+												<th class="w-20 px-[10px] py-[5px] text-left">Rank</th>
+												<th class="px-[10px] py-[5px] text-left">Name</th>
+												<th class="px-[10px] py-[5px] text-left">PnL</th>
+												<th class="px-[10px] py-[5px] text-right">payout %</th>
+											</tr>
+										</thead>
+										<tbody
+											class="text-body-s overf-y-auto h-full max-h-[500px] w-full"
+										>
+											<tr
+												class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+											>
+												<td class="px-[10px] py-[5px]">1</td>
+												<td class="px-[10px] py-[5px]">FHS</td>
+												<td class="px-[10px] py-[5px]">113.2</td>
+												<td class="px-[10px] py-[5px] text-right">35</td>
+											</tr>
+											<tr
+												class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+											>
+												<td class="px-[10px] py-[5px]">3</td>
+												<td class="px-[10px] py-[5px]">HZT</td>
+												<td class="px-[10px] py-[5px]">103.5</td>
+												<td class="px-[10px] py-[5px] text-right">15</td>
+											</tr>
+											<tr
+												class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+											>
+												<td class="px-[10px] py-[5px]">1</td>
+												<td class="px-[10px] py-[5px]">FHS</td>
+												<td class="px-[10px] py-[5px]">113.2</td>
+												<td class="px-[10px] py-[5px] text-right">35</td>
+											</tr>
+											<tr
+												class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+											>
+												<td class="px-[10px] py-[5px]">3</td>
+												<td class="px-[10px] py-[5px]">HZT</td>
+												<td class="px-[10px] py-[5px]">103.5</td>
+												<td class="px-[10px] py-[5px] text-right">15</td>
+											</tr>
+											<tr
+												class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+											>
+												<td class="px-[10px] py-[5px]">1</td>
+												<td class="px-[10px] py-[5px]">FHS</td>
+												<td class="px-[10px] py-[5px]">113.2</td>
+												<td class="px-[10px] py-[5px] text-right">35</td>
+											</tr>
+											<tr
+												class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+											>
+												<td class="px-[10px] py-[5px]">3</td>
+												<td class="px-[10px] py-[5px]">HZT</td>
+												<td class="px-[10px] py-[5px]">103.5</td>
+												<td class="px-[10px] py-[5px] text-right">15</td>
+											</tr>
+											<tr
+												class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+											>
+												<td class="px-[10px] py-[5px]">3</td>
+												<td class="px-[10px] py-[5px]">FHS</td>
+												<td class="px-[10px] py-[5px]">254.2</td>
+												<td class="px-[10px] py-[5px] text-right">-10</td>
+											</tr>
+											<tr
+												class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+											>
+												<td class="px-[10px] py-[5px]">4</td>
+												<td class="px-[10px] py-[5px]">FHS</td>
+												<td class="px-[10px] py-[5px]">254.2</td>
+												<td class="text-lightred px-[10px] py-[5px] text-right">
+													-10
+												</td>
+											</tr>
+											<tr
+												class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+											>
+												<td class="px-[10px] py-[5px]">5</td>
+												<td class="px-[10px] py-[5px]">FHS</td>
+												<td class="px-[10px] py-[5px]">254.2</td>
+												<td class="text-lightred px-[10px] py-[5px] text-right">
+													-10
+												</td>
+											</tr>
+											<tr
+												class="hover:bg-lightgrey cursor-pointer overflow-auto rounded-lg"
+											>
+												<td class="px-[10px] py-[5px]">6</td>
+												<td class="px-[10px] py-[5px]">FHS</td>
+												<td class="px-[10px] py-[5px]">254.2</td>
+												<td class="text-lightred px-[10px] py-[5px] text-right">
+													-10
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<!-- [START] Create Tournament Modal -->
+		<div
+			id="create-tournament-modal"
+			class="modal fixed top-0 left-0 z-10 hidden h-screen w-screen justify-center bg-black/60 pt-[52px]"
+		>
+			<!-- Modal -->
+			<div
+				class="bg-darkgrey relative mx-auto h-[700px] max-w-[528px] rounded-md p-6 pr-3"
+			>
+				<!-- Modal Content  -->
+				<div class="flex h-full flex-col">
+					<p class="text-body-lg-m text-center">Create Tournament</p>
+
+					<div class="mt-6 flex h-full gap-6 sm:flex-col">
+						<div class="relative h-[100px] w-[100px] shrink-0 rounded-lg">
+							<img src="./images/global/photo-bg.svg" alt="img" />
+							<img
+								class="absolute top-1/2 left-1/2 h-[56px] w-[56px] -translate-x-1/2 -translate-y-1/2"
+								src="./images/global/photo-icon.svg"
+								alt="img"
+							/>
+							<button class="absolute -bottom-5 left-1/2 -translate-x-1/2">
+								<img src="./images/global/set-photo.svg" alt="img" />
+							</button>
+						</div>
+						<div class="h-full w-full">
+							<form action="#" class="flex h-full flex-col gap-3">
+								<label class="input-label pr-3" for="name">
+									<p class="text-body-m text-greytext">Tournament Name</p>
+									<input
+										id="name"
+										name="name"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+
+								<label class="input-label pr-3" for="limit">
+									<p class="text-body-m text-greytext">Position Limit</p>
+									<input
+										id="limit"
+										name="limit"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+
+								<div class="pr-3">
+									<hr
+										class="bg-table-border my-3 block h-[1px] w-full border-none"
+									/>
+								</div>
+
+								<label
+									class="input-label flex-row items-center gap-5 pr-3"
+									for="new-team"
+								>
+									<p class="text-body-m text-greytext">Teams</p>
+									<input
+										id="new-team"
+										name="new-team"
+										type="text"
+										class="input-small pr-12"
+									/>
+									<button
+										class="hover:border-lightgreen absolute top-[3px] right-[15px] ml-auto flex h-[30px] w-[30px] items-center justify-center rounded-md border border-transparent bg-[#2C3638] p-[7px] text-xl"
+									>
+										<span>+</span>
+									</button>
+								</label>
+
+								<!-- Results -->
+								<div class="max-h-[284px] overflow-y-auto py-2 pr-3">
+									<ul class="flex flex-col gap-1">
+										<li
+											class="bg-lightgrey flex justify-between rounded-md px-3 py-2"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="group-hover:fill-lightgreen transition-colors"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="bg-lightgrey flex justify-between rounded-md px-3 py-2"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="group-hover:fill-lightgreen transition-colors"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="bg-lightgrey flex justify-between rounded-md px-3 py-2"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="group-hover:fill-lightgreen transition-colors"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="bg-lightgrey flex justify-between rounded-md px-3 py-2"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="group-hover:fill-lightgreen transition-colors"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="bg-lightgrey flex justify-between rounded-md px-3 py-2"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="group-hover:fill-lightgreen transition-colors"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="bg-lightgrey flex justify-between rounded-md px-3 py-2"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="group-hover:fill-lightgreen transition-colors"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="bg-lightgrey flex justify-between rounded-md px-3 py-2"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="group-hover:fill-lightgreen transition-colors"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="bg-lightgrey flex justify-between rounded-md px-3 py-2"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="group-hover:fill-lightgreen transition-colors"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="bg-lightgrey flex justify-between rounded-md px-3 py-2"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="group-hover:fill-lightgreen transition-colors"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+										<li
+											class="bg-lightgrey flex justify-between rounded-md px-3 py-2"
+										>
+											<span class="text-body-s">UVA</span>
+											<button class="group">
+												<svg
+													width="12"
+													height="12"
+													viewBox="0 0 12 12"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														class="group-hover:fill-lightgreen transition-colors"
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M10.7891 2.02444C11.0234 1.79013 11.0234 1.41023 10.7891 1.17591C10.5548 0.9416 10.1749 0.9416 9.94058 1.17591L5.98258 5.13391L2.02446 1.17579C1.79014 0.941471 1.41025 0.941472 1.17593 1.17579C0.941616 1.4101 0.941616 1.79 1.17593 2.02431L5.13424 5.98263L1.17593 9.94094C0.941616 10.1753 0.941616 10.5552 1.17593 10.7895C1.41024 11.0238 1.79014 11.0238 2.02446 10.7895L5.98245 6.83147L9.94058 10.7896C10.1749 11.0239 10.5548 11.0239 10.7891 10.7896C11.0234 10.5553 11.0234 10.1754 10.7891 9.94107L6.83079 5.98276L10.7891 2.02444Z"
+														fill="#A8ABAD"
+													/>
+												</svg>
+											</button>
+										</li>
+									</ul>
+								</div>
+
+								<button class="btn btn-small mt-auto flex" type="submit">
+									Create
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Close Btn -->
+				<button
+					id="create-tournament-close-btn"
+					class="group absolute top-3 right-3"
+				>
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle cx="12" cy="12" r="12" fill="#313A3D" />
+						<path
+							class="group-hover:fill-lightgreen transition-colors"
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M16.7891 8.02444C17.0234 7.79013 17.0234 7.41023 16.7891 7.17591C16.5548 6.9416 16.1749 6.9416 15.9406 7.17591L11.9826 11.1339L8.02446 7.17579C7.79014 6.94147 7.41025 6.94147 7.17593 7.17579C6.94162 7.4101 6.94162 7.79 7.17593 8.02431L11.1342 11.9826L7.17593 15.9409C6.94162 16.1753 6.94162 16.5552 7.17593 16.7895C7.41024 17.0238 7.79014 17.0238 8.02446 16.7895L11.9825 12.8315L15.9406 16.7896C16.1749 17.0239 16.5548 17.0239 16.7891 16.7896C17.0234 16.5553 17.0234 16.1754 16.7891 15.9411L12.8308 11.9828L16.7891 8.02444Z"
+							fill="#A8ABAD"
+						/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<!-- [END] Create Tournament Modal -->
+
+		<!-- [START] Account Settings Modal -->
+		<div
+			id="account-settings-modal"
+			class="modal fixed top-0 left-0 z-10 hidden h-screen w-screen justify-center bg-black/60 pt-[52px]"
+		>
+			<!-- Modal -->
+			<div
+				class="bg-darkgrey relative mx-auto h-[700px] w-full max-w-[528px] rounded-md p-6"
+			>
+				<!-- Modal Content  -->
+				<div class="flex h-full flex-col">
+					<p class="text-body-lg-m text-center">Account Settings</p>
+
+					<div class="mt-6 flex h-full gap-6 sm:flex-col">
+						<div class="relative h-[100px] w-[100px] shrink-0 rounded-full">
+							<img src="./images/global/account-avatar.svg" alt="img" />
+							<button class="absolute -bottom-5 left-1/2 -translate-x-1/2">
+								<img src="./images/global/set-photo.svg" alt="img" />
+							</button>
+						</div>
+						<div class="h-full w-full">
+							<form action="#" class="flex h-full flex-col gap-3">
+								<!-- Email -->
+								<label class="input-label" for="email">
+									<p class="text-body-m text-greytext">Email</p>
+									<input
+										id="email"
+										name="email"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+								<!-- First Name -->
+								<label class="input-label" for="firstName">
+									<p class="text-body-m text-greytext">First Name</p>
+									<input
+										id="firstName"
+										name="firstName"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+
+								<!-- Last Name -->
+								<label class="input-label" for="lastName">
+									<p class="text-body-m text-greytext">Last Name</p>
+									<input
+										id="lastName"
+										name="lastName"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+
+								<!-- Trading Acronym -->
+								<label class="input-label" for="acronym">
+									<p class="text-body-m text-greytext">Trading Acronym</p>
+									<input
+										id="acronym"
+										name="acronym"
+										type="text"
+										class="input-small p-3"
+									/>
+								</label>
+
+								<!-- Password -->
+								<p class="text-body-m text-greytext">Password</p>
+								<label for="password" class="input-label -mt-2">
+									<!-- Pswd input -->
+									<input
+										class="input-small password-input p-3"
+										name="password"
+										id="password"
+										type="password"
+									/>
+
+									<!-- Pswd Icons -->
+									<button
+										class="toggle-password-btn absolute top-1/2 right-5 h-[18px] w-[18px] -translate-y-1/2"
+									>
+										<img
+											class="pswd-icon-hidden"
+											src="./images/global/password-hidden.svg"
+											alt="icon"
+										/>
+										<img
+											class="pswd-icon-visible hidden"
+											src="./images/global/password-visible.svg"
+											alt="icon"
+										/>
+									</button>
+								</label>
+
+								<!-- Confirm Password -->
+								<p class="text-body-m text-greytext">Confirm Password</p>
+								<label for="passwordConfirm" class="input-label -mt-2">
+									<!-- Pswd input -->
+									<input
+										class="input-small password-input p-3"
+										name="passwordConfirm"
+										id="passwordConfirm"
+										type="password"
+									/>
+
+									<!-- Pswd Icons -->
+									<button
+										class="toggle-password-btn absolute top-1/2 right-5 h-[18px] w-[18px] -translate-y-1/2"
+									>
+										<img
+											class="pswd-icon-hidden"
+											src="./images/global/password-hidden.svg"
+											alt="icon"
+										/>
+										<img
+											class="pswd-icon-visible hidden"
+											src="./images/global/password-visible.svg"
+											alt="icon"
+										/>
+									</button>
+								</label>
+
+								<!-- Buttons -->
+								<div class="mt-auto grid grid-cols-2 gap-[14px]">
+									<button class="btn btn-blue p-[13px]">Reset</button>
+									<button class="btn p-[13px]">Update</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Close Btn -->
+				<button
+					id="account-settings-close-btn"
+					class="group absolute top-3 right-3"
+				>
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle cx="12" cy="12" r="12" fill="#313A3D" />
+						<path
+							class="group-hover:fill-lightgreen transition-colors"
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M16.7891 8.02444C17.0234 7.79013 17.0234 7.41023 16.7891 7.17591C16.5548 6.9416 16.1749 6.9416 15.9406 7.17591L11.9826 11.1339L8.02446 7.17579C7.79014 6.94147 7.41025 6.94147 7.17593 7.17579C6.94162 7.4101 6.94162 7.79 7.17593 8.02431L11.1342 11.9826L7.17593 15.9409C6.94162 16.1753 6.94162 16.5552 7.17593 16.7895C7.41024 17.0238 7.79014 17.0238 8.02446 16.7895L11.9825 12.8315L15.9406 16.7896C16.1749 17.0239 16.5548 17.0239 16.7891 16.7896C17.0234 16.5553 17.0234 16.1754 16.7891 15.9411L12.8308 11.9828L16.7891 8.02444Z"
+							fill="#A8ABAD"
+						/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<!-- [END] Account Settings Modal -->
+
+		<!-- JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>

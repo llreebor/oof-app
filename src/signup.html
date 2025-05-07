@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up | OOFTrade</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/output.css" />
+	</head>
+
+	<body class="h-full">
+		<div class="wrapper relative flex min-h-full flex-col">
+			<!-- Header -->
+			<header class="fixed top-[34px] left-0 w-full">
+				<div
+					class="mx-auto flex max-w-[1320px] items-center justify-between px-5"
+				>
+					<a href="#">
+						<img
+							class="sm:max-w-[100px]"
+							src="./images/global/logo.svg"
+							alt=""
+						/>
+					</a>
+					<h4>Hello Guest</h4>
+				</div>
+			</header>
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<!-- Section SignIn -->
+				<section
+					class="grid h-screen grid-cols-2 overflow-hidden sm:grid-cols-1"
+				>
+					<div class="relative h-screen sm:hidden">
+						<img
+							class="absolute top-0 left-0 z-[-1] h-full w-full object-cover"
+							src="./images/auth/auth-img.png"
+							alt="image"
+						/>
+					</div>
+					<div class="flex flex-col items-center justify-center">
+						<form autocomplete="off" class="w-full max-w-[356px]">
+							<h2
+								class="bg-green-text-gradient mb-8 bg-clip-text text-transparent"
+							>
+								Sign Up
+							</h2>
+
+							<label for="username">
+								<input
+									class="input-large"
+									placeholder="Username"
+									name="username"
+									id="username"
+									type="text"
+								/>
+							</label>
+
+							<label for="email" class="mt-6 block">
+								<input
+									class="input-large"
+									placeholder="Email"
+									name="email"
+									id="email"
+									type="text"
+								/>
+							</label>
+
+							<p class="text-body-s-medium text-lightred mt-6">Error message</p>
+							<p class="text-body-s-medium text-lightgreen mt-6">
+								Success message
+							</p>
+
+							<button class="btn btn-large mt-[30px]" type="submit">
+								Continue
+							</button>
+						</form>
+
+						<p class="text-body-s text-greytext mt-6">
+							Already have an account?
+							<a
+								class="text-lightgreen hover:text-lightgreen-hovered transition-colors"
+								href="#"
+							>
+								Sign In
+							</a>
+						</p>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<!-- JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>

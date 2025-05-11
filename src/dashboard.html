@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="./css/output.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="h-full">
+		<div class="font-archivo h-full">
+			<!-- Header -->
+			<header
+				class="bg-dashboard-bg flex w-full items-center justify-between gap-5 p-6"
+			>
+				<a href="#" class="text-2xl font-bold">Skating Video Analytics</a>
+
+				<ul class="flex items-center divide-x divide-[#595B5D]">
+					<li>
+						<a
+							href="#"
+							class="flex items-center gap-2 pr-10 text-lg font-medium text-white"
+						>
+							Info
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="#"
+							class="flex items-center gap-2 pl-10 text-lg font-medium text-white"
+						>
+							Hello,
+							<span>Andrew</span>
+							<img src="./images/dashboard/profile-icon.svg" alt="icon" />
+						</a>
+					</li>
+				</ul>
+			</header>
+			<!-- Main Content -->
+			<main class="min-h-full w-full bg-[#0D0D0D]">
+				<section class="flex h-full justify-between">
+					<!-- Left Side (toggle visibility by adding a “closed” class) -->
+					<div
+						id="left-sidebar"
+						class="bg-dashboard-bg left-sidebar border-lines h-full w-[264px] shrink-0 border border-l-0"
+					>
+						<!-- Upload Button -->
+						<div class="p-6">
+							<button id="upload-btn" class="dashboard-btn">
+								Upload Video
+							</button>
+						</div>
+
+						<!-- Your Profiles -->
+						<div class="p-6 pt-0">
+							<div class="flex gap-2 text-lg font-medium text-white">
+								<img src="./images/dashboard/profile.svg" alt="icon" />
+								Your Profiles
+							</div>
+
+							<div class="mt-6">
+								<!-- Search Input -->
+								<div
+									class="border-lines relative flex w-full rounded-md border px-3 py-[11px]"
+								>
+									<div
+										class="bg-dashboard-bg absolute top-1/2 left-3 -translate-y-1/2"
+									>
+										<img src="./images/dashboard/search.svg" alt="image" />
+									</div>
+									<input
+										type="text"
+										placeholder="Search"
+										class="flex w-full border-0 px-6 text-sm outline-none"
+									/>
+									<div
+										class="bg-dashboard-bg absolute top-1/2 right-3 -translate-y-1/2"
+									>
+										<img src="./images/dashboard/setting.svg" alt="image" />
+									</div>
+								</div>
+							</div>
+
+							<!-- Checkbox List -->
+							<div class="mt-7 space-y-6">
+								<!-- List Item -->
+								<div class="flex items-center justify-between gap-3">
+									<!-- Checkbox Input -->
+									<label
+										for="checkbox-input-1"
+										class="flex cursor-pointer items-center justify-between"
+									>
+										<input
+											name="checkbox-input-1"
+											id="checkbox-input-1"
+											class="peer sr-only"
+											type="checkbox"
+										/>
+										<div
+											class="peer-checked:border-primary peer-checked:bg-primary relative flex size-5 shrink-0 items-center justify-center rounded border border-gray-600 after:absolute after:top-1/2 after:left-1/2 after:hidden after:size-2 after:-translate-1/2 after:bg-[url(../images/dashboard/checkbox-arrow.svg)] peer-checked:after:block"
+										></div>
+									</label>
+									<div>
+										<p class="text-sm font-medium">Lee</p>
+										<p class="text-xs text-gray-700">3Ls/Female/09.24.2024</p>
+									</div>
+									<button
+										class="flex w-5 shrink-0 cursor-pointer items-center justify-center"
+									>
+										<img
+											src="./images/dashboard/close-circle.svg"
+											alt="close"
+										/>
+									</button>
+								</div>
+								<!-- List Item -->
+								<div class="flex items-center justify-between gap-3">
+									<!-- Checkbox Input -->
+									<label
+										for="checkbox-input-2"
+										class="flex cursor-pointer items-center justify-between"
+									>
+										<input
+											name="checkbox-input-2"
+											id="checkbox-input-2"
+											class="peer sr-only"
+											type="checkbox"
+										/>
+										<div
+											class="peer-checked:border-primary peer-checked:bg-primary relative flex size-5 shrink-0 items-center justify-center rounded border border-gray-600 after:absolute after:top-1/2 after:left-1/2 after:hidden after:size-2 after:-translate-1/2 after:bg-[url(../images/dashboard/checkbox-arrow.svg)] peer-checked:after:block"
+										></div>
+									</label>
+									<div>
+										<p class="text-sm font-medium">Shimada</p>
+										<p class="text-xs text-gray-700">3Ls/Female/09.24.2024</p>
+									</div>
+									<button
+										class="flex w-5 shrink-0 cursor-pointer items-center justify-center"
+									>
+										<img
+											src="./images/dashboard/close-circle.svg"
+											alt="close"
+										/>
+									</button>
+								</div>
+								<!-- List Item -->
+								<div class="flex items-center justify-between gap-3">
+									<!-- Checkbox Input -->
+									<label
+										for="checkbox-input-3"
+										class="flex cursor-pointer items-center justify-between"
+									>
+										<input
+											name="checkbox-input-3"
+											id="checkbox-input-3"
+											class="peer sr-only"
+											type="checkbox"
+										/>
+										<div
+											class="peer-checked:border-primary peer-checked:bg-primary relative flex size-5 shrink-0 items-center justify-center rounded border border-gray-600 after:absolute after:top-1/2 after:left-1/2 after:hidden after:size-2 after:-translate-1/2 after:bg-[url(../images/dashboard/checkbox-arrow.svg)] peer-checked:after:block"
+										></div>
+									</label>
+									<div>
+										<p class="text-sm font-medium">Chen</p>
+										<p class="text-xs text-gray-700">3Ls/Female/09.24.2024</p>
+									</div>
+									<button
+										class="flex w-5 shrink-0 cursor-pointer items-center justify-center"
+									>
+										<img
+											src="./images/dashboard/close-circle.svg"
+											alt="close"
+										/>
+									</button>
+								</div>
+								<!-- List Item -->
+								<div class="flex items-center justify-between gap-3">
+									<!-- Checkbox Input -->
+									<label
+										for="checkbox-input-4"
+										class="flex cursor-pointer items-center justify-between"
+									>
+										<input
+											name="checkbox-input-4"
+											id="checkbox-input-4"
+											class="peer sr-only"
+											type="checkbox"
+										/>
+										<div
+											class="peer-checked:border-primary peer-checked:bg-primary relative flex size-5 shrink-0 items-center justify-center rounded border border-gray-600 after:absolute after:top-1/2 after:left-1/2 after:hidden after:size-2 after:-translate-1/2 after:bg-[url(../images/dashboard/checkbox-arrow.svg)] peer-checked:after:block"
+										></div>
+									</label>
+									<div>
+										<p class="text-sm font-medium">Uno</p>
+										<p class="text-xs text-gray-700">3Ls/Female/09.24.2024</p>
+									</div>
+									<button
+										class="flex w-5 shrink-0 cursor-pointer items-center justify-center"
+									>
+										<img
+											src="./images/dashboard/close-circle.svg"
+											alt="close"
+										/>
+									</button>
+								</div>
+								<!-- List Item -->
+								<div class="flex items-center justify-between gap-3">
+									<!-- Checkbox Input -->
+									<label
+										for="checkbox-input-5"
+										class="flex cursor-pointer items-center justify-between"
+									>
+										<input
+											name="checkbox-input-5"
+											id="checkbox-input-5"
+											class="peer sr-only"
+											type="checkbox"
+										/>
+										<div
+											class="peer-checked:border-primary peer-checked:bg-primary relative flex size-5 shrink-0 items-center justify-center rounded border border-gray-600 after:absolute after:top-1/2 after:left-1/2 after:hidden after:size-2 after:-translate-1/2 after:bg-[url(../images/dashboard/checkbox-arrow.svg)] peer-checked:after:block"
+										></div>
+									</label>
+									<div>
+										<p class="text-sm font-medium">Hanyu</p>
+										<p class="text-xs text-gray-700">3Ls/Female/09.24.2024</p>
+									</div>
+									<button
+										class="flex w-5 shrink-0 cursor-pointer items-center justify-center"
+									>
+										<img
+											src="./images/dashboard/close-circle.svg"
+											alt="close"
+										/>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Divider -->
+						<hr class="border-lines" />
+
+						<!-- Public Profiles -->
+						<div class="p-6 pt-0">
+							<div class="mt-7">
+								<div class="flex gap-2 text-lg font-medium text-white">
+									<img src="./images/dashboard/profile-2user.svg" alt="icon" />
+									Public Profiles
+								</div>
+
+								<div class="mt-6">
+									<!-- Search Input -->
+									<div
+										class="border-lines relative flex w-full rounded-md border px-3 py-[11px]"
+									>
+										<div
+											class="bg-dashboard-bg absolute top-1/2 left-3 -translate-y-1/2"
+										>
+											<img src="./images/dashboard/search.svg" alt="image" />
+										</div>
+										<input
+											type="text"
+											placeholder="Search"
+											class="flex w-full border-0 px-6 text-sm outline-none"
+										/>
+										<div
+											class="bg-dashboard-bg absolute top-1/2 right-3 -translate-y-1/2"
+										>
+											<img src="./images/dashboard/setting.svg" alt="image" />
+										</div>
+									</div>
+								</div>
+
+								<!-- Checkbox List -->
+								<div class="mt-7 space-y-6">
+									<!-- List Item -->
+									<div class="flex items-center justify-between gap-3">
+										<!-- Checkbox Input -->
+										<label
+											for="checkbox-input-6"
+											class="flex cursor-pointer items-center justify-between"
+										>
+											<input
+												name="checkbox-input-6"
+												id="checkbox-input-6"
+												class="peer sr-only"
+												type="checkbox"
+											/>
+											<div
+												class="peer-checked:border-primary peer-checked:bg-primary relative flex size-5 shrink-0 items-center justify-center rounded border border-gray-600 after:absolute after:top-1/2 after:left-1/2 after:hidden after:size-2 after:-translate-1/2 after:bg-[url(../images/dashboard/checkbox-arrow.svg)] peer-checked:after:block"
+											></div>
+										</label>
+										<div>
+											<p class="text-sm font-medium">Malinin</p>
+											<p class="text-xs text-gray-700">3Ls/Female/09.24.2024</p>
+										</div>
+										<button
+											class="flex w-5 shrink-0 cursor-pointer items-center justify-center"
+										>
+											<img
+												src="./images/dashboard/close-circle.svg"
+												alt="close"
+											/>
+										</button>
+									</div>
+									<!-- List Item -->
+									<div class="flex items-center justify-between gap-3">
+										<!-- Checkbox Input -->
+										<label
+											for="checkbox-input-7"
+											class="flex cursor-pointer items-center justify-between"
+										>
+											<input
+												name="checkbox-input-7"
+												id="checkbox-input-7"
+												class="peer sr-only"
+												type="checkbox"
+											/>
+											<div
+												class="peer-checked:border-primary peer-checked:bg-primary relative flex size-5 shrink-0 items-center justify-center rounded border border-gray-600 after:absolute after:top-1/2 after:left-1/2 after:hidden after:size-2 after:-translate-1/2 after:bg-[url(../images/dashboard/checkbox-arrow.svg)] peer-checked:after:block"
+											></div>
+										</label>
+										<div>
+											<p class="text-sm font-medium">Chen</p>
+											<p class="text-xs text-gray-700">3Ls/Female/09.24.2024</p>
+										</div>
+										<button
+											class="flex w-5 shrink-0 cursor-pointer items-center justify-center"
+										>
+											<img
+												src="./images/dashboard/close-circle.svg"
+												alt="close"
+											/>
+										</button>
+									</div>
+									<!-- List Item -->
+									<div class="flex items-center justify-between gap-3">
+										<!-- Checkbox Input -->
+										<label
+											for="checkbox-input-8"
+											class="flex cursor-pointer items-center justify-between"
+										>
+											<input
+												name="checkbox-input-8"
+												id="checkbox-input-8"
+												class="peer sr-only"
+												type="checkbox"
+											/>
+											<div
+												class="peer-checked:border-primary peer-checked:bg-primary relative flex size-5 shrink-0 items-center justify-center rounded border border-gray-600 after:absolute after:top-1/2 after:left-1/2 after:hidden after:size-2 after:-translate-1/2 after:bg-[url(../images/dashboard/checkbox-arrow.svg)] peer-checked:after:block"
+											></div>
+										</label>
+										<div>
+											<p class="text-sm font-medium">Hanyu</p>
+											<p class="text-xs text-gray-700">3Ls/Female/09.24.2024</p>
+										</div>
+										<button
+											class="flex w-5 shrink-0 cursor-pointer items-center justify-center"
+										>
+											<img
+												src="./images/dashboard/close-circle.svg"
+												alt="close"
+											/>
+										</button>
+									</div>
+									<!-- List Item -->
+									<div class="flex items-center justify-between gap-3">
+										<!-- Checkbox Input -->
+										<label
+											for="checkbox-input-9"
+											class="flex cursor-pointer items-center justify-between"
+										>
+											<input
+												name="checkbox-input-9"
+												id="checkbox-input-9"
+												class="peer sr-only"
+												type="checkbox"
+											/>
+											<div
+												class="peer-checked:border-primary peer-checked:bg-primary relative flex size-5 shrink-0 items-center justify-center rounded border border-gray-600 after:absolute after:top-1/2 after:left-1/2 after:hidden after:size-2 after:-translate-1/2 after:bg-[url(../images/dashboard/checkbox-arrow.svg)] peer-checked:after:block"
+											></div>
+										</label>
+										<div>
+											<p class="text-sm font-medium">Uno</p>
+											<p class="text-xs text-gray-700">3Ls/Female/09.24.2024</p>
+										</div>
+										<button
+											class="flex w-5 shrink-0 cursor-pointer items-center justify-center"
+										>
+											<img
+												src="./images/dashboard/close-circle.svg"
+												alt="close"
+											/>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Center Side -->
+					<div class="border-lines w-full border-t text-center">
+						<div class="flex justify-between">
+							<button
+								id="left-sidebar-trigger"
+								class="bg-dashboard-bg group flex h-10 w-[34px] cursor-pointer items-center justify-center rounded-r-md transition-colors hover:bg-gray-900"
+							>
+								<img
+									class="group-[.active]:rotate-180"
+									src="./images/dashboard/arrow-left.svg"
+									alt="arrow"
+								/>
+							</button>
+							<button
+								class="bg-dashboard-bg flex size-[50px] cursor-pointer items-center justify-center transition-colors hover:bg-gray-900"
+							>
+								<img src="./images/dashboard/refresh.svg" alt="arrow" />
+							</button>
+							<button
+								id="right-sidebar-trigger"
+								class="bg-dashboard-bg group flex h-10 w-[34px] cursor-pointer items-center justify-center rounded-l-md transition-colors hover:bg-gray-900"
+							>
+								<img
+									class="group-[.active]:rotate-180"
+									src="./images/dashboard/arrow-right.svg"
+									alt="arrow"
+								/>
+							</button>
+						</div>
+					</div>
+					<!-- Right Side (toggle visibility by adding a “closed” class) -->
+					<div
+						id="right-sidebar"
+						class="bg-dashboard-bg border-lines right-sidebar h-full w-[264px] shrink-0 border border-r-0"
+					>
+						<!-- Analytical Toolkit -->
+						<div class="p-6">
+							<div class="flex gap-2 text-lg font-medium text-white">
+								<img src="./images/dashboard/toolkit.svg" alt="icon" />
+								Analytical Toolkit
+							</div>
+
+							<!-- Buttons -->
+							<div class="mt-7 space-y-2.5">
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 px-3 py-[11px] text-sm transition-colors hover:bg-gray-800"
+								>
+									Angular Velocity
+								</button>
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 px-3 py-[11px] text-sm transition-colors hover:bg-gray-800"
+								>
+									Knee Angle
+								</button>
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 px-3 py-[11px] text-sm transition-colors hover:bg-gray-800"
+								>
+									Moment of Inertia
+								</button>
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 px-3 py-[11px] text-sm transition-colors hover:bg-gray-800"
+								>
+									Rotations
+								</button>
+							</div>
+						</div>
+
+						<!-- Annotation Tools -->
+						<div class="p-6 pt-0">
+							<div class="flex gap-2 font-medium text-white">
+								Annotation Tools
+							</div>
+
+							<!-- Buttons -->
+							<div class="mt-3 grid grid-cols-2 gap-2.5">
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 p-2 text-sm leading-normal transition-colors hover:bg-gray-800"
+								>
+									<img
+										src="./images/dashboard/annotation-tool-icon-1.svg"
+										alt="icon"
+									/>
+									Areal
+								</button>
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 p-2 text-sm leading-normal transition-colors hover:bg-gray-800"
+								>
+									<img
+										src="./images/dashboard/annotation-tool-icon-2.svg"
+										alt="icon"
+									/>
+									Line
+								</button>
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 p-2 text-sm leading-normal transition-colors hover:bg-gray-800"
+								>
+									<img
+										src="./images/dashboard/annotation-tool-icon-3.svg"
+										alt="icon"
+									/>
+									Point
+								</button>
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 p-2 text-sm leading-normal transition-colors hover:bg-gray-800"
+								>
+									<img
+										src="./images/dashboard/annotation-tool-icon-4.svg"
+										alt="icon"
+									/>
+									Label
+								</button>
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 p-2 text-sm leading-normal transition-colors hover:bg-gray-800"
+								>
+									<img
+										src="./images/dashboard/annotation-tool-icon-5.svg"
+										alt="icon"
+									/>
+									Eraser
+								</button>
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 p-2 text-sm leading-normal transition-colors hover:bg-gray-800"
+								>
+									<img
+										src="./images/dashboard/annotation-tool-icon-6.svg"
+										alt="icon"
+									/>
+									Inteerval
+								</button>
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 p-2 text-sm leading-normal transition-colors hover:bg-gray-800"
+								>
+									<img
+										src="./images/dashboard/annotation-tool-icon-7.svg"
+										alt="icon"
+									/>
+									Max
+								</button>
+								<button
+									class="flex w-full cursor-pointer items-center justify-center gap-[6px] rounded-md bg-gray-900 p-2 text-sm leading-normal transition-colors hover:bg-gray-800"
+								>
+									<img
+										src="./images/dashboard/annotation-tool-icon-8.svg"
+										alt="icon"
+									/>
+									Min
+								</button>
+							</div>
+						</div>
+
+						<!-- Divider -->
+						<hr class="border-lines" />
+
+						<!-- Export Options -->
+						<div class="p-6">
+							<div class="flex gap-2 text-lg font-medium text-white">
+								<img src="./images/dashboard/import.svg" alt="icon" />
+								Export Options
+							</div>
+						</div>
+
+						<!-- Selects -->
+						<div class="space-y-2.5 p-6 pt-0">
+							<div class="flex gap-2 font-medium text-white">Data</div>
+
+							<!-- [START] HTML Select  -->
+							<div class="relative">
+								<div
+									id="select-1"
+									class="border-lines flex cursor-pointer items-center gap-4 rounded border p-3 transition duration-300 ease-in-out"
+								>
+									<span id="selected-option-1" class="text-sm text-white">
+										Skeletal
+									</span>
+									<div class="arrow absolute top-1/2 right-3 -translate-y-1/2">
+										<svg
+											class="transition-transform"
+											xmlns="http://www.w3.org/2000/svg"
+											width="14"
+											height="14"
+											viewBox="0 0 14 14"
+											fill="none"
+										>
+											<path
+												d="M1 4L7 10L13 4"
+												stroke="#A9AAAB"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</div>
+								</div>
+								<div
+									id="options-1"
+									class="bg-dashboard-bg absolute z-10 mt-1 hidden min-w-full transform overflow-hidden rounded border border-gray-900 transition-all duration-300 ease-in-out"
+								>
+									<ul class="grid">
+										<li
+											class="option cursor-pointer p-2 text-sm hover:bg-gray-800"
+										>
+											Skeletal
+										</li>
+										<li
+											class="option cursor-pointer p-2 text-sm hover:bg-gray-800"
+										>
+											Skeletal 2
+										</li>
+										<li
+											class="option cursor-pointer p-2 text-sm hover:bg-gray-800"
+										>
+											Skeletal 3
+										</li>
+										<li
+											class="option cursor-pointer p-2 text-sm hover:bg-gray-800"
+										>
+											Skeletal 4
+										</li>
+										<li
+											class="option cursor-pointer p-2 text-sm hover:bg-gray-800"
+										>
+											Skeletal 5
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- [END] HTML Select  -->
+
+							<!-- [START] HTML Select  -->
+							<div class="relative">
+								<div
+									id="select-2"
+									class="border-lines flex cursor-pointer items-center gap-4 rounded border p-3 transition duration-300 ease-in-out"
+								>
+									<span id="selected-option-2" class="text-sm text-white">
+										Data Output
+									</span>
+									<div class="arrow absolute top-1/2 right-3 -translate-y-1/2">
+										<svg
+											class="transition-transform"
+											xmlns="http://www.w3.org/2000/svg"
+											width="14"
+											height="14"
+											viewBox="0 0 14 14"
+											fill="none"
+										>
+											<path
+												d="M1 4L7 10L13 4"
+												stroke="#A9AAAB"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</div>
+								</div>
+								<div
+									id="options-2"
+									class="bg-dashboard-bg absolute z-10 mt-1 hidden min-w-full transform overflow-hidden rounded border border-gray-900 transition-all duration-300 ease-in-out"
+								>
+									<ul class="grid">
+										<li
+											class="option cursor-pointer p-2 text-sm hover:bg-gray-800"
+										>
+											Data Output
+										</li>
+										<li
+											class="option cursor-pointer p-2 text-sm hover:bg-gray-800"
+										>
+											Data Output 2
+										</li>
+										<li
+											class="option cursor-pointer p-2 text-sm hover:bg-gray-800"
+										>
+											Data Output 3
+										</li>
+										<li
+											class="option cursor-pointer p-2 text-sm hover:bg-gray-800"
+										>
+											Data Output 4
+										</li>
+										<li
+											class="option cursor-pointer p-2 text-sm hover:bg-gray-800"
+										>
+											Data Output 5
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- [END] HTML Select  -->
+						</div>
+
+						<!-- Annotated Video -->
+						<div class="flex items-center justify-between gap-3 p-6 pt-0">
+							<p class="font-medium text-gray-700">Annotated Video</p>
+							<!-- [START] HTML Toggle -->
+							<label class="relative inline-flex cursor-pointer items-center">
+								<input type="checkbox" value="" class="peer sr-only" />
+								<div
+									class="peer peer-checked:after:bg-primary h-6 w-10 rounded-full bg-gray-800 peer-focus:outline-none after:absolute after:top-1 after:left-1 after:size-4 after:rounded-full after:bg-gray-600 after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white"
+								></div>
+							</label>
+							<!-- [END] HTML Toggle  -->
+						</div>
+
+						<!-- Export Button -->
+						<div class="p-6">
+							<button id="upload-btn" class="dashboard-btn">Export</button>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<!-- JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>

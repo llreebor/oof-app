@@ -107,4 +107,7 @@
 	.right-sidebar.closed {
 		@apply hidden w-0 opacity-0;
 	}
+	.center-sidebar.closed {
+		@apply hidden h-0 w-0 opacity-0;
+	}
 }

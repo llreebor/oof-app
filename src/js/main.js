@@ -31,14 +31,22 @@ togglePasswordVisibility()
 function toggleSidebarVisibility() {
 	const leftSidebar = document.getElementById("left-sidebar")
 	const leftSidebarTrigger = document.getElementById("left-sidebar-trigger")
+	const centerSidebar = document.getElementById("center-sidebar")
+	const centerSidebarTrigger = document.getElementById("center-sidebar-trigger")
 	const rightSidebar = document.getElementById("right-sidebar")
 	const rightSidebarTrigger = document.getElementById("right-sidebar-trigger")
 	if (!leftSidebar) return
 	if (!rightSidebar) return
+	if (!centerSidebar) return
 
 	leftSidebarTrigger.addEventListener("click", () => {
 		leftSidebar.classList.toggle("closed")
 		leftSidebarTrigger.classList.toggle("active")
+	})
+	centerSidebarTrigger.addEventListener("click", () => {
+		centerSidebar.classList.toggle("closed")
+		centerSidebarTrigger.classList.toggle("active")
+		console.log(22)
 	})
 	rightSidebarTrigger.addEventListener("click", () => {
 		rightSidebar.classList.toggle("closed")

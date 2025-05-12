@@ -404,30 +404,167 @@
 					</div>
 					<!-- Center Side -->
 					<div class="border-lines w-full border-t text-center">
-						<div class="flex justify-between">
+						<!-- Player -->
+						<div id="center-sidebar" class="bg-dashboard-bg center-sidebar p-6">
+							<div class="flex gap-2 text-lg font-medium text-white">
+								<img src="./images/dashboard/refresh.svg" alt="icon" />
+								Time Sync
+							</div>
+
+							<div class="mt-4 flex w-full gap-4">
+								<!-- Tracks -->
+								<div class="w-full space-y-2.5">
+									<!-- Track Item -->
+									<div
+										class="flex items-center gap-5 rounded bg-gray-900 px-[14px] py-3"
+									>
+										<div class="w-[140px] text-left">Liu</div>
+										<div class="flex w-full items-center gap-2.5">
+											<div class="flex w-[52px] items-center gap-1">
+												<button class="cursor-pointer">
+													<img
+														src="./images/dashboard/player-left-two.svg"
+														alt="player button"
+													/>
+												</button>
+												<button class="cursor-pointer">
+													<img
+														src="./images/dashboard/player-left-one.svg"
+														alt="player button"
+													/>
+												</button>
+											</div>
+
+											<!-- Range Slider will be here -->
+											<div class="w-full flex-1 items-center justify-center">
+												<input
+													type="range"
+													min="0"
+													max="100"
+													class="bg-primary accent-primary flex h-[6px] w-full appearance-none"
+												/>
+											</div>
+
+											<div class="flex w-[52px] items-center gap-1">
+												<button class="cursor-pointer">
+													<img
+														src="./images/dashboard/player-right-two.svg"
+														alt="player button"
+													/>
+												</button>
+												<button class="cursor-pointer">
+													<img
+														src="./images/dashboard/player-right-one.svg"
+														alt="player button"
+													/>
+												</button>
+											</div>
+										</div>
+									</div>
+									<!-- Track Item -->
+									<div
+										class="flex items-center gap-5 rounded bg-gray-900 px-[14px] py-3"
+									>
+										<div class="w-[140px] text-left">Valieva</div>
+										<div class="flex w-full items-center gap-2.5">
+											<div class="flex w-[52px] items-center gap-1">
+												<button class="cursor-pointer">
+													<img
+														src="./images/dashboard/player-left-two.svg"
+														alt="player button"
+													/>
+												</button>
+												<button class="cursor-pointer">
+													<img
+														src="./images/dashboard/player-left-one.svg"
+														alt="player button"
+													/>
+												</button>
+											</div>
+
+											<!-- Range Slider will be here -->
+											<div class="w-full flex-1 items-center justify-center">
+												<input
+													type="range"
+													min="0"
+													max="100"
+													class="bg-secondary accent-secondary flex h-[6px] w-full appearance-none"
+												/>
+											</div>
+
+											<div class="flex w-[52px] items-center gap-1">
+												<button class="cursor-pointer">
+													<img
+														src="./images/dashboard/player-right-two.svg"
+														alt="player button"
+													/>
+												</button>
+												<button class="cursor-pointer">
+													<img
+														src="./images/dashboard/player-right-one.svg"
+														alt="player button"
+													/>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Time Sync Button -->
+								<div class="w-[136px] shrink-0">
+									<button
+										class="border-primary text-primary hover:bg-primary flex h-full w-full cursor-pointer items-center justify-center rounded border font-semibold transition-colors hover:text-white"
+									>
+										Time Sync
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- Buttons -->
+						<div class="flex items-start justify-between">
 							<button
 								id="left-sidebar-trigger"
 								class="bg-dashboard-bg group flex h-10 w-[34px] cursor-pointer items-center justify-center rounded-r-md transition-colors hover:bg-gray-900"
 							>
 								<img
-									class="group-[.active]:rotate-180"
+									class="block group-[.active]:hidden"
 									src="./images/dashboard/arrow-left.svg"
 									alt="arrow"
 								/>
+								<img
+									class="hidden group-[.active]:block"
+									src="./images/dashboard/left-side-icon.svg"
+									alt="icon"
+								/>
 							</button>
-							<button
-								class="bg-dashboard-bg flex size-[50px] cursor-pointer items-center justify-center transition-colors hover:bg-gray-900"
-							>
-								<img src="./images/dashboard/refresh.svg" alt="arrow" />
+							<button id="center-sidebar-trigger" class="group cursor-pointer">
+								<div
+									class="bg-dashboard-bg flex h-[34px] w-10 items-center justify-center rounded-b-md transition-colors group-[.active]:size-[50px] hover:bg-gray-900"
+								>
+									<img
+										class="hidden group-[.active]:block"
+										src="./images/dashboard/refresh.svg"
+										alt="arrow"
+									/>
+									<img
+										class="block -rotate-90 group-[.active]:hidden"
+										src="./images/dashboard/arrow-left.svg"
+										alt="arrow"
+									/>
+								</div>
 							</button>
 							<button
 								id="right-sidebar-trigger"
 								class="bg-dashboard-bg group flex h-10 w-[34px] cursor-pointer items-center justify-center rounded-l-md transition-colors hover:bg-gray-900"
 							>
 								<img
-									class="group-[.active]:rotate-180"
+									class="block group-[.active]:hidden"
 									src="./images/dashboard/arrow-right.svg"
 									alt="arrow"
+								/>
+								<img
+									class="hidden group-[.active]:block"
+									src="./images/dashboard/right-side-icon.svg"
+									alt="icon"
 								/>
 							</button>
 						</div>

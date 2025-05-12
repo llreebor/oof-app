@@ -67,6 +67,9 @@
 	h5 {
 		@apply text-xl leading-[24px] font-medium;
 	}
+	button {
+		@apply cursor-pointer;
+	}
 }
 @layer components {
 	/* Buttons */
